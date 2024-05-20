@@ -1,9 +1,9 @@
 {
-  "name": "plugin-sample-vite-svelte",
+  "name": "sy-title-icon-manager",
   "author": "frostime",
-  "url": "https://github.com/siyuan-note/plugin-sample-vite-svelte",
+  "url": "https://github.com/jzmanu/siyuan-title-icon-manager",
   "version": "0.3.5",
-  "minAppVersion": "3.0.12",
+  "minAppVersion": "3.0.13",
   "backends": [
     "windows",
     "linux",
@@ -19,12 +19,12 @@
     "desktop-window"
   ],
   "displayName": {
-    "en_US": "Plugin sample with vite and svelte",
-    "zh_CN": "插件样例 vite + svelte 版"
+    "en_US": "title icom tools",
+    "zh_CN": "标题图标工具"
   },
   "description": {
-    "en_US": "SiYuan plugin sample with vite and svelte",
-    "zh_CN": "使用 vite 和 svelte 开发的思源插件样例"
+    "en_US": "title icom tools",
+    "zh_CN": "标题图标工具，包括图标管理，图标自动刷新自己喜欢的分组"
   },
   "readme": {
     "en_US": "README.md",

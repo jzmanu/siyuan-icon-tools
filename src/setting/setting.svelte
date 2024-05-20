@@ -1,65 +1,13 @@
 <script lang="ts">
-    import { showMessage } from "siyuan";
-    import SettingPanel from "./libs/setting-panel.svelte";
+    import SettingPanel from "../libs/setting-panel.svelte";
+    import {refreshData,settingItems,initSettingItems} from "@/icon/data"
 
-    let groups: string[] = ["🌈 Default"];
+    let groups: string[] = ["🌈 设置","🌈 关于"];
     let focusGroup = groups[0];
 
-    const SettingItems: ISettingItem[] = [
-        {
-            type: 'checkbox',
-            title: 'checkbox',
-            description: 'checkbox',
-            key: 'a',
-            value: true
-        },
-        {
-            type: 'textinput',
-            title: 'text',
-            description: 'This is a text',
-            key: 'b',
-            value: 'This is a text',
-            placeholder: 'placeholder'
-        },
-        {
-            type: 'select',
-            title: 'select',
-            description: 'select',
-            key: 'c',
-            value: 'x',
-            options: {
-                x: 'x',
-                y: 'y',
-                z: 'z'
-            }
-        },
-        {
-            type: 'slider',
-            title: 'slider',
-            description: 'slider',
-            key: 'd',
-            value: 50,
-            slider: {
-                min: 0,
-                max: 100,
-                step: 1
-            }
-        },
-        {
-            type: 'button',
-            title: 'button',
-            description: 'This is a button',
-            key: 'e',
-            value: 'Click Button',
-            button: {
-                label: 'Click Me',
-                callback: () => {
-                    showMessage('Hello, world!');
-                }
-            }
-        }
-    ];
+    // initSettingItems();
 
+    
     /********** Events **********/
     interface ChangeEvent {
         group: string;
@@ -68,6 +16,8 @@
     }
 
     const onChanged = ({ detail }: CustomEvent<ChangeEvent>) => {
+        console.log("setting > onChanged > key:"+detail.key+",value:"+detail.value);
+        refreshData(detail.key,detail.value);
         if (detail.group === groups[0]) {
             // setting.set(detail.key, detail.value);
             //Please add your code here
@@ -96,13 +46,13 @@
     <div class="config__tab-wrap">
         <SettingPanel
             group={groups[0]}
-            settingItems={SettingItems}
+            settingItems={settingItems}
             display={focusGroup === groups[0]}
             on:changed={onChanged}
             on:click={({ detail }) => { console.debug("Click:", detail.key); }}
         >
             <div class="fn__flex b3-label">
-                💡 This is our default settings.
+                默认全部图标，可以关闭不想随机到的分组，使用方式：选择「添加图标」，鼠标移动到图标位置「右击」一次随机图标。
             </div>
         </SettingPanel>
     </div>
