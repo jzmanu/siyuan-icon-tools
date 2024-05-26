@@ -30,7 +30,6 @@ export default class PluginSample extends Plugin {
         addContextMenuEvent();
         initSettingItems();
         this.data[STORAGE_NAME] = { readonlyText: "Readonly" };
-        Log.d("onload > i18n:"+(this.i18n));
         const frontEnd = getFrontend();
         this.isMobile = frontEnd === "mobile" || frontEnd === "browser-mobile";
         this.addTopBar({
@@ -38,14 +37,10 @@ export default class PluginSample extends Plugin {
             title: this.i18n.addTopBarIcon,
             position: "right",
             callback: () => {
-                this.openDIYSetting();
+                this.openSetting();
             }
         });
         Log.d(this.i18n.helloPlugin);
-    }
-
-    onLayoutReady() {
-       
     }
 
     async onunload() {
@@ -58,28 +53,15 @@ export default class PluginSample extends Plugin {
         Log.d("uninstall");
     }
 
-    async updateCards(options: ICardData) {
-        options.cards.sort((a: ICard, b: ICard) => {
-            if (a.blockID < b.blockID) {
-                return -1;
-            }
-            if (a.blockID > b.blockID) {
-                return 1;
-            }
-            return 0;
-        });
-        return options;
-    }
-
     /**
      * A custom setting pannel provided by svelte
      */
-    openDIYSetting(): void {
+    openSetting(): void {
         let dialog = new Dialog({
             title: this.i18n.settingTitle,
             content: `<div id="SettingPanel" style="height: 100%;"”></div>`,
-            width: "800px",
-            height: "600px",
+            width: "1024px",
+            height: "768px",
             destroyCallback: (options) => {
                 Log.d("destroyCallback", options);
                 //You'd better destroy the component when the dialog is closed
@@ -89,29 +71,5 @@ export default class PluginSample extends Plugin {
         let pannel = new SettingExample({
             target: dialog.element.querySelector("#SettingPanel"),
         });
-    }
-
-    private addMenu(rect?: DOMRect) {
-        const menu = new Menu("topBarSample", () => {
-            Log.d(this.i18n.byeMenu);
-        });
-       
-        menu.addItem({
-            icon: "iconSettings",
-            label: "标题图标设置",
-            click: () => {
-                this.openDIYSetting();
-            }
-        });
-        
-        if (this.isMobile) {
-            menu.fullscreen();
-        } else {
-            menu.open({
-                x: rect.right,
-                y: rect.bottom,
-                isLeft: true,
-            });
-        }
     }
 }
