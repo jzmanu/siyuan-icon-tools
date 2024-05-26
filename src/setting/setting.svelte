@@ -1,13 +1,15 @@
 <script lang="ts">
     import SettingPanel from "../libs/setting-panel.svelte";
-    import {refreshData,settingItems,initSettingItems} from "@/icon/data"
-
-    let groups: string[] = ["🌈 设置","🌈 关于"];
+    import {refreshData,settingItems} from "@/icon/data"
+    import {dataStore} from "@/utils/store"
+    let groups: string[] = ["分组","关于"];
     let focusGroup = groups[0];
+    let i18n = null;
+    $: dataStore.subscribe(value => {
+        i18n = value;
+        groups = [i18n.group,i18n.about];
+    });
 
-    // initSettingItems();
-
-    
     /********** Events **********/
     interface ChangeEvent {
         group: string;
@@ -51,9 +53,7 @@
             on:changed={onChanged}
             on:click={({ detail }) => { console.debug("Click:", detail.key); }}
         >
-            <div class="fn__flex b3-label">
-                默认全部图标，可以关闭不想随机到的分组，使用方式：选择「添加图标」，鼠标移动到图标位置「右击」一次随机图标。
-            </div>
+            <div class="fn__flex b3-label">{i18n.usage}</div>
         </SettingPanel>
     </div>
 </div>

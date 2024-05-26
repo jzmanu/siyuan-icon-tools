@@ -1,21 +1,6 @@
 ---
 addTopBarIcon: 标题图标设置
-cancel: 取消
-save: 保存
-byeMenu: 再见，菜单！
-helloPlugin: 你好，插件！
-byePlugin: 再见，插件！
-showDialog: 弹出一个对话框
-removedData: 数据已删除
-confirmRemove: 确认删除 ${name} 中的数据？
-insertEmoji: 插入表情
-removeSpace: 移除空格
-getTab: 在日志中打印出已打开的所有自定义页签
-name: 思源
-hello:
-  makesure: 使用这个模板之前，请阅读<a href="https://github.com/siyuan-note/plugin-sample">官方教程</a>,
-    确保自己已经理解了插件的基本开发流程。
-hintTitle: 关于
-hintDesc: "<a href='https://github.com/siyuan-note/plugin-sample-vite-svelte'>\U0001F517
-  plugin-sample-vite-svelte</a><br>\U0001F4BB @frostime<br>\U0001F4BB @88250<br>\U0001F4BB
-  @zxkmm"
+settingTitle: 设置
+usage: 默认全部图标，可以关闭不想随机的分组，使用方式：选择「添加图标」，空白处点击取消思源默认图标选择弹窗，鼠标移动到图标位置「右击」一次随机选中分组内图标。
+group: 分组
+about: 关于

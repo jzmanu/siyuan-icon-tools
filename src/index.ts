@@ -12,6 +12,7 @@ import "@/index.scss";
 import { addContextMenuEvent} from "@/icon/event";
 import {Log} from "@/utils/log";
 import { initSettingItems} from "@/icon/data";
+import { dataStore} from "@/utils/store";
 
 
 import SettingExample from "@/setting/setting.svelte";
@@ -25,6 +26,7 @@ export default class PluginSample extends Plugin {
 
     async onload() {
         Log.i("onload");
+        dataStore.set(this.i18n);
         addContextMenuEvent();
         initSettingItems();
         this.data[STORAGE_NAME] = { readonlyText: "Readonly" };
@@ -74,7 +76,7 @@ export default class PluginSample extends Plugin {
      */
     openDIYSetting(): void {
         let dialog = new Dialog({
-            title: "SettingPannel",
+            title: this.i18n.settingTitle,
             content: `<div id="SettingPanel" style="height: 100%;"”></div>`,
             width: "800px",
             height: "600px",
