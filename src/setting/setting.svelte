@@ -29,7 +29,7 @@
 </script>
 
 <div class="fn__flex-1 fn__flex config__panel">
-    <ul class="b3-tab-bar b3-list b3-list--background">
+    <ul class="b3-tab-bar b3-list b3-list--background" style="display: none;">
         {#each groups as group}
             <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
             <li
