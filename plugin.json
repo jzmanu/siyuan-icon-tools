@@ -1,7 +1,7 @@
 {
   "name": "siyuan-icon-tools",
   "author": "jzman",
-  "url": "https://github.com/jzmanu/siyuan-title-icon-manager",
+  "url": "https://github.com/jzmanu/siyuan-icon-tools",
   "version": "1.0.0",
   "minAppVersion": "3.0.13",
   "backends": [
@@ -13,7 +13,6 @@
   ],
   "frontends": [
     "desktop",
-    "mobile",
     "browser-desktop",
     "browser-mobile",
     "desktop-window"
@@ -27,8 +26,8 @@
     "zh_CN": "Icon toolbox, supports specifying groups and then randomizing icons."
   },
   "readme": {
-    "en_US": "README_en.md",
-    "zh_CN": "README.md"
+    "en_US": "README.md",
+    "zh_CN": "README_zh_CN.md"
   },
   "funding": {
     "custom": [

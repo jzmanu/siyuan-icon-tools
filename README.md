@@ -1,58 +1,51 @@
 # siyuan-icon-tools
 
-[英文版README](./README.md)
+[中文 README](./README.md)
 
+# Why make this plugin?
 
-# 为什么要做这款插件？
+Siyuan Notes supports setting icons at the bottom of the title image, which is very beautiful, but the default randomization is to randomly select from all icons, and it is not easy to randomly select the icon you like. In many cases, you have to click the "Random" button many times to randomly select the icon you like. If you use notes frequently, this process will be very painful, so I developed this plugin to set the range of random icons according to personal preferences. For example, I usually choose the "Food and Drinks" group.
 
+# Function introduction
 
-思源笔记支持在题图底部交界处设置图标，非常美观，但是默认的随机是从所有的图标中进行随机的，不太容易随机到喜欢的图标，很多情况下点击「随机」按钮很多次才能随机到喜欢的图标，使用笔记频率高的话，这个过程会非常痛苦，所以就开发了这款插件，使的随机图标的范围根据个人喜好设置，比如我一般选择「食物和饮料」分组。
+The siyuan-title-icon-manager plugin is used to manage icons in the title bar. Currently supported functions are as follows:
+- Support icon group selection, multiple selections, default selection.
+- Support mouse "right-click" on the icon to randomly fill the icon.
+- Modify the number of icon documents and outline linkage.
 
-# 功能介绍
+The current grouping is the same as the official grouping of Siyuan:
+- Expressions and characters
+- Animals and nature
+- Food and drink
+- Activities
+- Travel and places
+- Objects
+- Symbols
+- Flags
 
-siyuan-title-icon-manager 插件用来管理标题栏的图标，目前支持功能如下：
-- 支持图标分组选择，可多选，默认全选。
-- 支持鼠标在图标上「右击」随机填充图标。
-- 修改图标文档数和大纲联动。
+# How to use
 
-目前的分组和思源官方的分组一样：
-- 表情和人物
-- 动物和自然
-- 食物与饮料
-- 活动
-- 旅行和地点
-- 物件
-- 符号
-- 旗帜
-
-# 使用方式
-
-选择「添加图标」，空白处点击取消思源默认图标选择弹窗，鼠标移动到图标位置「右击」一次随机选中分组内图标，下面演示一下：
+Select "Add icon", click on the blank space to cancel the Siyuan default icon selection pop-up window, move the mouse to the icon position and "right-click" once to randomly select an icon in the group. The following is a demonstration:
 
 ![image](/sample.gif)
 
-
-# 版本记录
+# Version record
 
 ## v1.0.0
 
-- 发布初始版本支持基本功能。
+- The initial version supports basic functions.
 
+# Feedback
 
-# 问题反馈
+If you encounter problems during use, please raise [issues](https://github.com/jzmanu/siyuan-title-icon-manager/issues) on Github.
 
-如果在使用过程中遇到问题，欢迎在 Github 上提 [issues](https://github.com/jzmanu/siyuan-title-icon-manager/issues)。
+# Subsequent plans
 
-# 后续计划
+- [ ] Support custom icons
+- [ ] Others...
 
-- [ ] 支持自定义图标
-- [ ] 其他...
+# Contact me
 
-# 联系我
+Personal WeChat public account: ***躬行之***.
 
-个人微信公众号：***躬行之***,
 ![躬行之](gxz.png)
-
-
-
-
