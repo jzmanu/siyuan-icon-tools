@@ -60,8 +60,8 @@ export default class PluginSample extends Plugin {
         let dialog = new Dialog({
             title: this.i18n.settingTitle,
             content: `<div id="SettingPanel" style="height: 100%;"”></div>`,
-            width: "1024px",
-            height: "768px",
+            width: "800px",
+            height: "600px",
             destroyCallback: (options) => {
                 Log.d("destroyCallback", options);
                 //You'd better destroy the component when the dialog is closed
