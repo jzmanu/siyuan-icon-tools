@@ -1,8 +1,8 @@
 {
-  "name": "sy-title-icon-manager",
-  "author": "frostime",
+  "name": "siyuan-icon-tools",
+  "author": "jzman",
   "url": "https://github.com/jzmanu/siyuan-title-icon-manager",
-  "version": "0.3.5",
+  "version": "1.0.0",
   "minAppVersion": "3.0.13",
   "backends": [
     "windows",
@@ -19,23 +19,23 @@
     "desktop-window"
   ],
   "displayName": {
-    "en_US": "title icom tools",
-    "zh_CN": "标题图标工具"
+    "en_US": "Icon Tools",
+    "zh_CN": "图标工具箱"
   },
   "description": {
-    "en_US": "title icom tools",
-    "zh_CN": "标题图标工具，包括图标管理，图标自动刷新自己喜欢的分组"
+    "en_US": "Icon tools",
+    "zh_CN": "Icon toolbox, supports specifying groups and then randomizing icons."
   },
   "readme": {
-    "en_US": "README.md",
-    "zh_CN": "README_zh_CN.md"
+    "en_US": "README_en.md",
+    "zh_CN": "README.md"
   },
   "funding": {
     "custom": [
-      "https://afdian.net/a/frostime"
+      "https://afdian.net/a/jzman"
     ]
   },
   "keywords": [
-    "plugin", "sample", "插件样例"
+    "图标", "icon", "icons","插件", "plugin","siyuan","工具", "tool", "tools","图标工具","图标管理"
   ]
 }
