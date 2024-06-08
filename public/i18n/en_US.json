@@ -1,7 +1,7 @@
 {
-    "addTopBarIcon": "Title icon setting manager",
+    "addTopBarIcon": "Icon setting",
     "settingTitle": "Setting",
-    "usage": "By default, all icons can be turned off and groups that do not want to be randomly selected can be closed. The usage method is to select 「Add Icon」, click to cancel the default icon selection pop-up in the blank space, and move the mouse to the icon position. Right click to randomly select the icons within the group once.",
-    "group": "分组",
-    "about": "关于"
+    "usage": "🔔 Select 「Add Icon」, click on the blank space to cancel the default icon selection pop-up window for Siyuan, move the mouse to the icon position and 「right-click」 to randomly select the icon within the group once,Support multiple selections.",
+    "group": "Category",
+    "about": "About"
 }
