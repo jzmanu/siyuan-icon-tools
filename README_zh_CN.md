@@ -29,7 +29,7 @@ siyuan-title-icon-manager 插件用来管理标题栏的图标，目前支持功
 
 选择「添加图标」，空白处点击取消思源默认图标选择弹窗，鼠标移动到图标位置「右击」一次随机选中分组内图标，下面演示一下：
 
-![image](/sample.gif)
+![image](https://note.youdao.com/yws/public/resource/c44ec5cb300d316b051daa81a0214d67/xmlnote/WEBRESOURCEeca68e9a139eb5bd3b02214c98b87ae1/133375)
 
 
 # 版本记录
@@ -52,7 +52,7 @@ siyuan-title-icon-manager 插件用来管理标题栏的图标，目前支持功
 
 个人微信公众号：***躬行之***,
 
-![躬行之](gxz.png)
+![躬行之](https://note.youdao.com/yws/public/resource/c44ec5cb300d316b051daa81a0214d67/xmlnote/WEBRESOURCE2a2853abaea4762043b5aa6d951385d4/133373)
 
 
 
