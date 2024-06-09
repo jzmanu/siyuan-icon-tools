@@ -1,6 +1,6 @@
 /// Log
 export class Log{
-    static debug:boolean = true;
+    static debug:boolean = false;
     static i(msg:string){
         console.log(`[INFO] ${msg}`)
     }
