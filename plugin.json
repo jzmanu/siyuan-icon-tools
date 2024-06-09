@@ -22,8 +22,8 @@
     "zh_CN": "图标工具箱"
   },
   "description": {
-    "en_US": "Icon tools",
-    "zh_CN": "Icon toolbox, supports specifying groups and then randomizing icons."
+    "en_US": "The icon tool box, specify a group, randomly display the icon in a smaller range, the number of documents and outline linkage.",
+    "zh_CN": "图标工具箱，指定分组，在更小的范围随机显示图标，与文档数和大纲联动。"
   },
   "readme": {
     "en_US": "README.md",
