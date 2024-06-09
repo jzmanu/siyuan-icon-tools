@@ -1,5 +1,5 @@
 /// config
 export class Config {
-    static readonly path = "/data/plugins/sy-title-icon-manager/data.json";
+    static readonly path = "/data/plugins/siyuan-icon-tools/data.json";
 }
 
