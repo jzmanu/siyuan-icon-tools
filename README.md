@@ -8,7 +8,7 @@ Siyuan Notes supports setting icons at the bottom of the title image, which is v
 
 # Function introduction
 
-The siyuan-title-icon-manager plugin is used to manage icons in the title bar. Currently supported functions are as follows:
+The siyuan-icon-tools plugin is used to manage icons in the title bar. Currently supported functions are as follows:
 - Support icon group selection, multiple selections, default selection.
 - Support mouse "right-click" on the icon to randomly fill the icon.
 - Modify the number of icon documents and outline linkage.
@@ -34,6 +34,11 @@ Select "Add icon", click on the blank space to cancel the Siyuan default icon se
 ## v1.0.0
 
 - The initial version supports basic functions.
+
+## v1.0.1
+
+- Fixed the issue that the restart would fail after the plugin was enabled.
+- Updated README
 
 # Feedback
 

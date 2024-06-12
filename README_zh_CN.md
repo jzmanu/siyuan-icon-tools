@@ -10,7 +10,7 @@
 
 # 功能介绍
 
-siyuan-title-icon-manager 插件用来管理标题栏的图标，目前支持功能如下：
+siyuan-icon-tools 插件用来管理标题栏的图标，目前支持功能如下：
 - 支持图标分组选择，可多选，默认全选。
 - 支持鼠标在图标上「右击」随机填充图标。
 - 修改图标文档树和大纲联动。
@@ -29,7 +29,7 @@ siyuan-title-icon-manager 插件用来管理标题栏的图标，目前支持功
 
 选择「添加图标」，空白处点击取消思源默认图标选择弹窗，鼠标移动到图标位置「右击」一次随机选中分组内图标，下面演示一下：
 
-![image](https://note.youdao.com/yws/public/resource/c44ec5cb300d316b051daa81a0214d67/xmlnote/WEBRESOURCEeca68e9a139eb5bd3b02214c98b87ae1/133375)
+![siyuan-icon-tools](https://note.youdao.com/yws/public/resource/c44ec5cb300d316b051daa81a0214d67/xmlnote/WEBRESOURCEcdd196533a67f8fe7f21b27894a22c7b/133383)
 
 
 # 版本记录
@@ -37,6 +37,11 @@ siyuan-title-icon-manager 插件用来管理标题栏的图标，目前支持功
 ## v1.0.0
 
 - 发布初始版本支持基本功能。
+
+## v1.0.1
+
+- 修复插件开启后，重启失效异常
+- 更新README
 
 
 # 问题反馈
