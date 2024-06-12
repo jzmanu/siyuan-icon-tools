@@ -28,7 +28,6 @@ export default class PluginSample extends Plugin {
         Log.i("onload");
         dataStore.set(this.i18n);
         addContextMenuEvent();
-        initSettingItems();
         this.data[STORAGE_NAME] = { readonlyText: "Readonly" };
         const frontEnd = getFrontend();
         this.isMobile = frontEnd === "mobile" || frontEnd === "browser-mobile";
@@ -41,6 +40,9 @@ export default class PluginSample extends Plugin {
             }
         });
         Log.d(this.i18n.helloPlugin);
+        setTimeout(() => {
+            initSettingItems();
+        }, 300);
     }
 
     async onunload() {

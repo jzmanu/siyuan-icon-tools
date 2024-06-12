@@ -129,7 +129,11 @@ async function refreshTitleIcon(event, element) {
                 emoji += String.fromCodePoint(parseInt(item, 16));
             }
         });
-        document.querySelector(".b3-list-item__graphic").textContent = emoji;
+        var outline = document.querySelector(".b3-list-item__graphic");
+        Log.d("refreshTitleIcon > emoji:"+emoji+",outline:"+outline);
+        if (outline != null) {
+            outline.textContent = emoji;
+        }
     } else {
         Log.i("refreshTitleIcon > don't suuport.")
     }

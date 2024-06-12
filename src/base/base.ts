@@ -16,32 +16,62 @@ export class IconType {
    static readonly Flags = "flags"
 }
 
-export const itemArrays: Item[][] = [
-    window.siyuan.emojis.filter(item => {
-        return item.id == IconType.People;
-    })[0].items,
-    window.siyuan.emojis.filter(item => {
-        return item.id == IconType.Nature;
-    })[0].items,
-    window.siyuan.emojis.filter(item => {
-        return item.id == IconType.Food;
-    })[0].items,
-    window.siyuan.emojis.filter(item => {
-        return item.id == IconType.Activity;
-    })[0].items,
-    window.siyuan.emojis.filter(item => {
-        return item.id == IconType.Travel;
-    })[0].items,
-    window.siyuan.emojis.filter(item => {
-        return item.id == IconType.Objects;
-    })[0].items,
-    window.siyuan.emojis.filter(item => {
-        return item.id == IconType.Symbols;
-    })[0].items,
-    window.siyuan.emojis.filter(item => {
-        return item.id == IconType.Flags;
-    })[0].items
-];
+// export const itemArrays: Item[][] = [
+//     window.siyuan.emojis.filter(item => {
+//         return item.id == IconType.People;
+//     })[0].items,
+//     window.siyuan.emojis.filter(item => {
+//         return item.id == IconType.Nature;
+//     })[0].items,
+//     window.siyuan.emojis.filter(item => {
+//         return item.id == IconType.Food;
+//     })[0].items,
+//     window.siyuan.emojis.filter(item => {
+//         return item.id == IconType.Activity;
+//     })[0].items,
+//     window.siyuan.emojis.filter(item => {
+//         return item.id == IconType.Travel;
+//     })[0].items,
+//     window.siyuan.emojis.filter(item => {
+//         return item.id == IconType.Objects;
+//     })[0].items,
+//     window.siyuan.emojis.filter(item => {
+//         return item.id == IconType.Symbols;
+//     })[0].items,
+//     window.siyuan.emojis.filter(item => {
+//         return item.id == IconType.Flags;
+//     })[0].items
+// ];
+
+export function initItems():Item[][]{
+	const itemArrays: Item[][] = [
+		window.siyuan.emojis.filter(item => {
+			return item.id == IconType.People;
+		})[0].items,
+		window.siyuan.emojis.filter(item => {
+			return item.id == IconType.Nature;
+		})[0].items,
+		window.siyuan.emojis.filter(item => {
+			return item.id == IconType.Food;
+		})[0].items,
+		window.siyuan.emojis.filter(item => {
+			return item.id == IconType.Activity;
+		})[0].items,
+		window.siyuan.emojis.filter(item => {
+			return item.id == IconType.Travel;
+		})[0].items,
+		window.siyuan.emojis.filter(item => {
+			return item.id == IconType.Objects;
+		})[0].items,
+		window.siyuan.emojis.filter(item => {
+			return item.id == IconType.Symbols;
+		})[0].items,
+		window.siyuan.emojis.filter(item => {
+			return item.id == IconType.Flags;
+		})[0].items
+	];
+	return itemArrays;
+}
 
 export let allSettingItems: ISettingItem[] = [
     {

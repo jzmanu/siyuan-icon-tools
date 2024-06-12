@@ -6,7 +6,7 @@ import {
 import {
     Item,
     IconType,
-    itemArrays,
+    initItems,
     allSettingItems
 } from "../base/base"
 
@@ -73,12 +73,13 @@ function getIndex(id: string): number {
     }
 }
 
-const manager = new ItemManager(itemArrays);
+var manager;
 
 export let settingItems: ISettingItem[] = [];
 
 export function initSettingItems() {
     Log.d("initSettingItems");
+    manager = new ItemManager(initItems());
     const getFIleCallback:GetFileCallback = {
         onGetFileSuccess(res) {
             if(res != null && res.length > 0){
