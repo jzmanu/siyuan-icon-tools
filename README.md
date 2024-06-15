@@ -33,7 +33,9 @@ Select "Add icon", click on the blank space to cancel the Siyuan default icon se
 
 ## v1.0.0
 
-- The initial version supports basic functions.
+- Supports group selection of icons, multiple selections are allowed, and all are selected by default.
+- Supports random filling of icons by "right-click" the mouse on the icon.
+- Modify the linkage between the icon document tree and the outline.
 
 ## v1.0.1
 
