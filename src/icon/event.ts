@@ -135,6 +135,6 @@ async function refreshTitleIcon(event, element) {
             outline.textContent = emoji;
         }
     } else {
-        Log.i("refreshTitleIcon > don't suuport.")
+        Log.w("refreshTitleIcon > don't suuport.")
     }
 }

@@ -97,7 +97,7 @@ export function initSettingItems() {
         },
     
         onGetFileFailed(error) {
-            Log.d("initSettingItems > error:"+error);
+            Log.e("initSettingItems > error:"+error);
             settingItems = allSettingItems;
             manager.initItemArrays();
         },
@@ -136,10 +136,10 @@ export function refreshData(key: string, value: boolean){
     let path = Config.path
     let putFileCallback = {
         onPutFileSuccess: function () {
-            Log.d("put file success");
+            Log.d("refreshData > put file success");
         },
         onPutFileFailed: function (error) {
-            Log.d(error);
+            Log.e("refreshData > error:"+error);
         }
     };
     FileUtils.putFile(path,JSON.stringify(settingItems,null,2),putFileCallback)

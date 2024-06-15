@@ -13,4 +13,8 @@ export class Log{
     static e(msg:string){
         console.error(`[ERROR] ${msg}`)
     }
+
+    static w(msg:string){
+        console.log(`[WARN] ${msg}`)
+    }
 }
