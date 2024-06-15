@@ -49,6 +49,10 @@ siyuan-icon-tools 插件用来管理标题栏的图标，目前支持功能如�
 - 插件设置图标适配明亮、黑暗模式。
 - 增加插件安装、卸载提示信息。
 
+## v1.0.3
+
+- 修复插件加载提示信息异常。
+
 # 问题反馈
 
 如果在使用过程中遇到问题，欢迎在 Github 上提 [issues](https://github.com/jzmanu/siyuan-title-icon-manager/issues)。

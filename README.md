@@ -46,6 +46,10 @@ Select "Add icon", click on the blank space to cancel the Siyuan default icon se
 - The plugin settings icon is adapted to light and dark modes.
 - Added plugin installation and uninstallation prompts.
 
+## v1.0.3
+
+- Fixed the abnormal plug-in loading prompt information.
+
 # Feedback
 
 If you encounter problems during use, please raise [issues](https://github.com/jzmanu/siyuan-title-icon-manager/issues) on Github.
