@@ -2,7 +2,7 @@
   "name": "siyuan-icon-tools",
   "author": "jzman",
   "url": "https://github.com/jzmanu/siyuan-icon-tools",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "minAppVersion": "3.0.13",
   "backends": [
     "windows",
