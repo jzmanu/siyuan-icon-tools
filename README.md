@@ -38,7 +38,11 @@ Select "Add icon", click on the blank space to cancel the Siyuan default icon se
 ## v1.0.1
 
 - Fixed the issue that the restart would fail after the plugin was enabled.
-- Updated README
+
+## v1.0.2
+
+- The plugin settings icon is adapted to light and dark modes.
+- Added plugin installation and uninstallation prompts.
 
 # Feedback
 
