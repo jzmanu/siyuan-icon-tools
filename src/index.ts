@@ -23,7 +23,6 @@ export default class PluginSample extends Plugin {
 
     async onload() {
         Log.i("onload");
-        showMessage(this.i18n.loadInfo);
         dataStore.set(this.i18n);
         addContextMenuEvent();
         this.data[STORAGE_NAME] = { readonlyText: "Readonly" };
