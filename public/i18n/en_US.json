@@ -3,5 +3,7 @@
     "settingTitle": "Setting",
     "usage": "🔔 Select 「Add Icon」, click on the blank space to cancel the default icon selection pop-up window for Siyuan, move the mouse to the icon position and 「right-click」 to randomly select the icon within the group once,Support multiple selections.",
     "group": "Category",
-    "about": "About"
+    "about": "About",
+    "unloadInfo": "Already unload siyuan-icon-tools plugin.",
+    "loadInfo": "Already load siyuan-icon-tools plugin."
 }

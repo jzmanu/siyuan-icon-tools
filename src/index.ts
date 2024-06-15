@@ -23,6 +23,7 @@ export default class PluginSample extends Plugin {
 
     async onload() {
         Log.i("onload");
+        showMessage(this.i18n.loadInfo);
         dataStore.set(this.i18n);
         addContextMenuEvent();
         this.data[STORAGE_NAME] = { readonlyText: "Readonly" };
@@ -36,15 +37,14 @@ export default class PluginSample extends Plugin {
                 this.openSetting();
             }
         });
-        Log.d(this.i18n.helloPlugin);
         setTimeout(() => {
             initSettingItems();
         }, 300);
     }
 
     async onunload() {
-        Log.d(this.i18n.byePlugin);
-        showMessage("Goodbye SiYuan Plugin");
+        Log.d("onunload");
+        showMessage(this.i18n.unloadInfo);
         Log.d("onunload");
     }
 
