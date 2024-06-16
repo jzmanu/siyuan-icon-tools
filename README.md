@@ -1,6 +1,6 @@
 # siyuan-icon-tools
 
-[中文 README](./README.md)
+[中文 README](./README_zh_CN.md)
 
 # Why make this plugin?
 
