@@ -2,10 +2,12 @@
     import SettingPanel from "../libs/setting-panel.svelte";
     import {refreshData,settingItems} from "@/icon/data"
     import {dataStore} from "@/utils/store"
+    import {Log} from "@/utils/log";
     let groups: string[] = ["分组","关于"];
     let focusGroup = groups[0];
     let i18n = null;
     $: dataStore.subscribe(value => {
+        Log.d("subscribe > value:"+value+",lang:"+window.siyuan.config.lang);
         i18n = value;
         groups = [i18n.group,i18n.about];
     });
@@ -49,7 +51,6 @@
         <SettingPanel
             group={groups[0]}
             settingItems={settingItems}
-            display={focusGroup === groups[0]}
             on:changed={onChanged}
             on:click={({ detail }) => { console.debug("Click:", detail.key); }}
         >

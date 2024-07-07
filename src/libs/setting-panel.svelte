@@ -32,7 +32,7 @@
     {#each settingItems as item (item.key)}
         <SettingItem
             type={item.type}
-            title={item.title}
+            title={window.siyuan.config.lang == "zh_CN" ? item.title: item.key.charAt(0).toUpperCase() + item.key.slice(1)}
             description={item.description}
             settingKey={item.key}
             settingValue={item.value}
