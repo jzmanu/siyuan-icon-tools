@@ -108,7 +108,7 @@ export function initSettingItems() {
 
 export function getUnicode(): string {
     const mergedArray = manager.getData();
-    Log.d(mergedArray.length);
+    Log.d("getUnicode > length:"+mergedArray.length);
     if (mergedArray.length === 0) {
         // throw new Error("No active items available");
     }
