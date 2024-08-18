@@ -74,6 +74,12 @@ export function addContextMenuEvent() {
     Log.d("addContextMenuEvent")
     document.addEventListener('contextmenu', refreshTitleIcon)
 }
+
+export function removeContextMenuEvent() {
+    Log.d("removeContextMenuEvent")
+    document.removeEventListener('contextmenu', refreshTitleIcon)
+}
+
 /**
  * refresh title picture
  * @param {*} event 

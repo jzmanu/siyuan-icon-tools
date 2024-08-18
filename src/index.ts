@@ -6,8 +6,8 @@ import {
     IModel,
 } from "siyuan";
 import "@/index.scss";
-import { addContextMenuEvent} from "@/icon/event";
-import {Log} from "@/utils/log";
+import { addContextMenuEvent, removeContextMenuEvent} from "@/icon/event";
+import { Log} from "@/utils/log";
 import { initSettingItems} from "@/icon/data";
 import { dataStore} from "@/utils/store";
 
@@ -44,7 +44,7 @@ export default class PluginSample extends Plugin {
     async onunload() {
         Log.d("onunload");
         showMessage(this.i18n.unloadInfo);
-        Log.d("onunload");
+        removeContextMenuEvent();
     }
 
     uninstall() {
