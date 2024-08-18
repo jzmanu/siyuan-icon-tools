@@ -14,6 +14,7 @@ export class IconType {
    static readonly Objects = "objects";
    static readonly Symbols = "symbols";
    static readonly Flags = "flags"
+   static readonly Custom = "custom"
 }
 
 export function initItems():Item[][]{
@@ -41,6 +42,9 @@ export function initItems():Item[][]{
 		})[0].items,
 		window.siyuan.emojis.filter(item => {
 			return item.id == IconType.Flags;
+		})[0].items,
+        window.siyuan.emojis.filter(item => {
+			return item.id == IconType.Custom;
 		})[0].items
 	];
 	return itemArrays;
@@ -101,6 +105,13 @@ export let allSettingItems: ISettingItem[] = [
         title: '旗帜',  
         description: '',
         key: 'flags',
+        value: true,
+    },
+    {
+        type: 'checkbox',
+        title: '自定义表情',  
+        description: '',
+        key: 'custom emojis',
         value: true,
     }
 ];

@@ -27,7 +27,7 @@ class ItemManager {
     }
 
     initItemArrays(){
-        Log.d("initItemArrays");
+        Log.d("initItemArrays > length:"+settingItems.length);
         settingItems.map((item, index) => {
             Log.d("initItemArrays > value: " + item.value);
             this.itemArrays[index].active = item.value;
@@ -88,6 +88,10 @@ export function initSettingItems() {
                     settingItems = allSettingItems;
                 }else{
                     settingItems = JSON.parse(res);
+                    let diffArray: ISettingItem[] = findExtraElements(settingItems)
+                    if(diffArray.length > 0){
+                        settingItems.push(...diffArray);
+                    }
                 }      
             }else{
                 Log.d("initSettingItems > res is null");
@@ -105,12 +109,16 @@ export function initSettingItems() {
     FileUtils.getFile(Config.path,getFIleCallback);
 }
 
+function findExtraElements(array: ISettingItem[]): ISettingItem[] {
+    return allSettingItems.filter(item1 => !array.some(item => item1.title === item.title));
+}
+
 
 export function getUnicode(): string {
     const mergedArray = manager.getData();
     Log.d("getUnicode > length:"+mergedArray.length);
     if (mergedArray.length === 0) {
-        // throw new Error("No active items available");
+        Log.e("getUnicode > No active items available");
     }
     const randomIndex = Math.floor(Math.random() * mergedArray.length);
     return mergedArray[randomIndex].unicode; 
