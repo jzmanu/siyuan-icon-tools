@@ -65,8 +65,11 @@ If you encounter problems during use, please raise [issues](https://github.com/j
 
 # Subsequent plans
 
-- [ ] Support custom icons
-- [ ] Others...
+- [ ] None
+
+# Supporting the author
+
+- [afdian](https://afdian.net/a/jzman)
 
 # Contact me
 
