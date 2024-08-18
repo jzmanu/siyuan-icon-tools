@@ -56,8 +56,8 @@ Select "Add icon", click on the blank space to cancel the Siyuan default icon se
 
 ## v1.0.5
 
--Fixed the anomaly of switching icons twice after enabling and disabling the plugin
--Support custom emoticons and random selection
+- Fixed the anomaly of switching icons twice after enabling and disabling the plugin
+- Support custom emoticons and random selection
 
 # Feedback
 
