@@ -63,12 +63,9 @@ Select "Add icon", click on the blank space to cancel the Siyuan default icon se
 
 If you encounter problems during use, please raise [issues](https://github.com/jzmanu/siyuan-title-icon-manager/issues) on Github.
 
-# Subsequent plans
-
-- [ ] None
-
 # Supporting the author
 
+- [Github Star](https://github.com/jzmanu/siyuan-icon-tools)
 - [afdian](https://afdian.net/a/jzman)
 
 # Contact me

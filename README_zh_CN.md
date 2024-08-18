@@ -67,12 +67,9 @@ siyuan-icon-tools 插件用来管理标题栏的图标，目前支持功能如�
 
 如果在使用过程中遇到问题，欢迎在 Github 上提 [issues](https://github.com/jzmanu/siyuan-title-icon-manager/issues)。
 
-# 后续计划
-
-- [ ] 暂无
-
 # 支持作者
 
+- [Github Star](https://github.com/jzmanu/siyuan-icon-tools)
 - [爱发电](https://afdian.net/a/jzman)
 
 # 联系我
