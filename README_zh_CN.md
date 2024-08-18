@@ -58,6 +58,11 @@ siyuan-icon-tools 插件用来管理标题栏的图标，目前支持功能如�
 - 修复插件在非中文场景下的设置界面不显示异常。
 - 修改插件信息错别字。
 
+## v1.0.5
+
+- 修复了两次启用、禁用插件后两次切换图标的异常
+- 支持自定义表情随机选择
+
 # 问题反馈
 
 如果在使用过程中遇到问题，欢迎在 Github 上提 [issues](https://github.com/jzmanu/siyuan-title-icon-manager/issues)。

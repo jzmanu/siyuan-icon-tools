@@ -54,6 +54,11 @@ Select "Add icon", click on the blank space to cancel the Siyuan default icon se
 - Fixed the problem that the plugin's settings interface does not display abnormally in non-Chinese scenarios.
 - Modified typos in plugin information.
 
+## v1.0.5
+
+-Fixed the anomaly of switching icons twice after enabling and disabling the plugin
+-Support custom emoticons and random selection
+
 # Feedback
 
 If you encounter problems during use, please raise [issues](https://github.com/jzmanu/siyuan-title-icon-manager/issues) on Github.
