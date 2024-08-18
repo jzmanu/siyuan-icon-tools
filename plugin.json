@@ -2,7 +2,7 @@
   "name": "siyuan-icon-tools",
   "author": "jzman",
   "url": "https://github.com/jzmanu/siyuan-icon-tools",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "minAppVersion": "3.0.13",
   "backends": [
     "windows",
@@ -35,6 +35,6 @@
     ]
   },
   "keywords": [
-    "图标", "icon", "icons","插件", "plugin","siyuan","工具", "tool", "tools","图标工具","图标管理"
+    "图标", "icon", "icons","插件", "plugin","siyuan","工具", "tool", "tools","图标工具","图标管理","emojis","emoji", "custom emoji"
   ]
 }
